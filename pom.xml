@@ -15,7 +15,8 @@
 
     <!-- configure the versions you want to use here -->
     <fabric8.version>2.3.7</fabric8.version>
-    <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
+    <spring-boot.version>1.5.15.RELEASE</spring-boot.version>
+    <spring-boot-bom.version>1.5.15.Final</spring-boot-bom.version>
 
     <!-- maven plugin versions -->
     <fabric8.maven.plugin.version>3.5.34</fabric8.maven.plugin.version>
@@ -33,6 +34,14 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
+      <dependency>
+        <groupId>me.snowdrop</groupId>
+        <artifactId>spring-boot-bom</artifactId>
+        <version>${spring-boot-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -47,6 +56,10 @@
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
