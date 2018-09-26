@@ -1,14 +1,15 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="lnk" type="PLAIN_TEXT" />
       <mapping pattern="divisions" type="SQL" />
-      <mapping pattern="sp_ins_upd_model" type="SQL" />
-      <mapping pattern="categories" type="SQL" />
       <mapping pattern="types" type="SQL" />
+      <mapping pattern="categories" type="SQL" />
+      <mapping pattern="sp_ins_upd_category" type="SQL" />
       <mapping pattern="sp_get_structure" type="SQL" />
       <mapping pattern="getModels" type="SQL" />
+      <mapping pattern="sp_ins_upd_model" type="SQL" />
       <mapping pattern="sp_ins_upd_type" type="SQL" />
-      <mapping pattern="sp_ins_upd_category" type="SQL" />
     </extensionMap>
   </component>
 </application>
